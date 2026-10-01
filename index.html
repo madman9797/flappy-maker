@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Flappy Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">FLAPPY <span>MAKER</span></div>
+    <p>Make your way through the pipes.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Flappy Maker</h1>
+      <p class="subtitle">Play the Lite version right in your browser.</p>
+      <div class="buttons">
+        <a class="button primary" href="#lite">▶ PLAY LITE</a>
+        <a class="button secondary" href="downloads/Flappy-Maker-Full.love" download>↓ DOWNLOAD FULL GAME</a>
+      </div>
+    </section>
+
+    <section id="lite" class="game-section">
+      <h2>Flappy Maker Lite</h2>
+      <p class="small">Classic mode only • Tap, click, or press Space to jump</p>
+      <div class="game-wrap">
+        <canvas id="game" width="360" height="640" aria-label="Flappy Maker Lite game"></canvas>
+        <div id="message" class="message">
+          <strong>FLAPPY MAKER LITE</strong>
+          <span>Tap or press Space to start</span>
+        </div>
+      </div>
+      <button id="restart" class="button primary restart">RESTART</button>
+    </section>
+
+    <section class="info">
+      <div><b>🐦 Classic Bird</b><span>One bird. No skins.</span></div>
+      <div><b>🟩 Classic Pipes</b><span>Just dodge the pipes.</span></div>
+      <div><b>🏆 High Score</b><span>Your best score is saved on this device.</span></div>
+    </section>
+  </main>
+
+  <footer>© Flappy Maker • Lite Edition</footer>
+  <script src="game.js"></script>
+</body>
+</html>
